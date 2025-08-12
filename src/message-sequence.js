@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
     { text: "you matter.", background: "#856948", animation: "scale-down", textEffect: "" },
     { text: "Always.", background: "#685b8f", animation: "fade-slide", textEffect: "" },
 
-    { text: "Happy Birthday!", background: "#5a4763", animation: "circle-reveal", textEffect: "", image: "../img/hb.gif" }
+    { text: "Happy Birthday!", background: "#5a4763", animation: "circle-reveal", textEffect: "", image: "img/hb.gif" }
   ];
 
 
@@ -163,4 +163,5 @@ document.addEventListener("DOMContentLoaded", () => {
   // Event listeners to hook buttons to their respective actions
   startBtn.addEventListener('click', startSequence);
   replayBtn.addEventListener('click', resetToInitialState);
+
 });
