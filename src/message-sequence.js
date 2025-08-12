@@ -148,7 +148,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <span id="rotating-word">pause</span>
       </div>
     `;
-    container.style.backgroundColor = '#222';
+    container.style.backgroundColor = '#222831';
 
     // Show start button, hide replay button
     startBtn.style.display = 'block';
@@ -165,3 +165,4 @@ document.addEventListener("DOMContentLoaded", () => {
   replayBtn.addEventListener('click', resetToInitialState);
 
 });
+
