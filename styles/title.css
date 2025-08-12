@@ -1,0 +1,73 @@
+.rotating-title {
+  display: flex;
+  align-items: center;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  color: #fff;
+  min-height: 2.5em;
+}
+
+.prefix {
+  display: inline-block;
+  color: white;
+  transition: margin-right 0.5s ease;
+  will-change: margin-right;
+}
+
+#rotating-word {
+  color: #b35e8d;
+  font-weight: bold;
+  display: inline-block;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.letter {
+  display: inline-block;
+  transform-origin: center center 25px;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  opacity: 1;
+  margin: 0 2.5px;
+  letter-spacing: 0.05em;
+}
+
+.letter.out {
+  transform: rotateX(90deg);
+  opacity: 0;
+  transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
+}
+
+.letter.behind {
+  transform: rotateX(-90deg);
+  opacity: 0;
+}
+
+.letter.in {
+  transform: rotateX(0deg);
+  opacity: 1;
+  transition: 0.38s ease;
+}
+
+
+@media (max-width: 600px) {
+  .rotating-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    min-height: 2.2em;
+  }
+
+  .letter {
+    margin: 0 1.2px;
+    letter-spacing: 0.01em;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .letter.out {
+    transform: rotateX(90deg);
+    transition: 0.25s cubic-bezier(0.6, 0, 0.7, 0.2);
+  }
+
+  .letter.in {
+    transition: 0.3s ease;
+  }
+}

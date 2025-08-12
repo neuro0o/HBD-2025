@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/title.css">
+
+    <title>Happy Birthday &hearts;</title>
+  </head>
+  <body>
+
+    <!-- BGM File -->
+    <audio id="bgm" src="audio/Again.mp3" loop></audio>
+
+    <!-- message container -->
+    <div id="message-container">
+      <!-- contents -->
+      <div id="message-content">
+        <!-- title screen -->
+        <div class="rotating-title">
+          <span class="prefix">A</span>
+          <span id="rotating-word"></span>
+        </div>
+      </div>
+
+      <!-- buttons -->
+      <div id="controls">
+        <!-- start button -->
+        <button id="start-btn" class="circle-btn">
+          <i class="fa-solid fa-play"></i>
+        </button>
+        <!-- replay button -->
+        <button id="replay-btn" class="circle-btn" style="display: none;">
+          <i class="fa-solid fa-rotate-right"></i>
+        </button>
+      </div>
+    </div>
+    
+    <!-- JS File -->
+    <script src="./src/message-sequence.js"></script>
+    <script src="./src/title-rotate.js"></script>
+  </body>
+</html>
